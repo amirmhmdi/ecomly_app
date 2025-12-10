@@ -1,3 +1,5 @@
+import 'package:ecomly_app/core/res/styles/colours.dart';
+import 'package:ecomly_app/core/res/styles/text.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +11,37 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    final theme = ThemeData(
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: Colours.lightThemePrimaryColour,
+      ),
+      fontFamily: "Switzer",
+      scaffoldBackgroundColor: Colours.lightThemeTintStockColour,
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colours.lightThemeTintStockColour,
+        foregroundColor: Colours.lightThemePrimaryTextColour,
+      ),
+      useMaterial3: true,
+    );
+    return MaterialApp(
+      title: "Ecomly",
+      themeMode: ThemeMode.system,
+      theme: theme,
+      darkTheme: theme.copyWith(
+        scaffoldBackgroundColor: Colours.darkThemeBGDark,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colours.darkThemeBGDark,
+          foregroundColor: Colours.lightThemeWhiteColour,
+        ),
+      ),
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Text(
+            'Hello World!',
+            style: TextStyles.headingRegular.copyWith(
+              color: Colours.classicAdaptiveTextColour(context),
+            ),
+          ),
         ),
       ),
     );
