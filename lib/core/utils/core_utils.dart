@@ -1,4 +1,4 @@
-import 'package:ecomly_app/core/commen/extensions/context_extension.dart';
+import 'package:ecomly_app/core/common/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 
 abstract class CoreUtils {

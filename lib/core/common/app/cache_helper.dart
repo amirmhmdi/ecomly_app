@@ -1,8 +1,8 @@
-import 'package:ecomly_app/core/commen/singletons/cache.dart';
+import 'package:ecomly_app/core/common/singletons/cache.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:ecomly_app/core/commen/extensions/theme_mode_extension.dart';
-import 'package:ecomly_app/core/commen/extensions/string_extension.dart';
+import 'package:ecomly_app/core/common/extensions/theme_mode_extension.dart';
+import 'package:ecomly_app/core/common/extensions/string_extension.dart';
 
 class CacheHelper {
   final SharedPreferences _prefs;
