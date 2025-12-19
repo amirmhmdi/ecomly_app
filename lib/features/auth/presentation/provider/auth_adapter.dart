@@ -11,10 +11,10 @@ import 'package:equatable/equatable.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'auth_state.dart';
-part 'auth_provider.g.dart';
+part 'auth_adapter.g.dart';
 
 @riverpod
-class AuthProvider extends _$AuthProvider {
+class AuthAdapter extends _$AuthAdapter {
   @override
   AuthState build() {
     _forgotPasswordUsecase = sl<ForgotPasswordUsecase>();

@@ -13,4 +13,7 @@ abstract class ApiUrls {
       "${NetworkConstants.baseUrl}/reset-password";
   static String get verifyTokenEndpoint =>
       "${NetworkConstants.baseUrl}/verify-token";
+
+  static String usersEndpoint(String userId) =>
+      "${NetworkConstants.baseUrl}/users/$userId";
 }
